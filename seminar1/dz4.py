@@ -7,8 +7,18 @@
 # - A (7,-5); B (1,-1) -> 7,21
 
 
-print('Введите A:')
-a = float(input())
-print('Введите B:')
-b = float(input())
+import math
 
+
+print('Введите координату точки A по X:')
+ax = float(input())
+print('Введите координату точки A по Y:')
+ay = float(input())
+print('Введите координату точки B по X:')
+bx = float(input())
+print('Введите координату точки B по Y:')
+by = float(input())
+
+result = math.sqrt((ax - bx) ** 2 + (ay - by) ** 2)
+print('%.3f' % result)
+# print(f'{round(result, 2)}') Не понятно, округляет 5.09 до 5.1 (и %.2f так тоже округляет)
