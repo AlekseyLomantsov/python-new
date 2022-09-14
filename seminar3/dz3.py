@@ -6,3 +6,18 @@
 # Пример:
 
 # - [1.1, 1.2, 3.1, 10.01] => 0.19
+
+
+
+
+my_list = [1.1, 1.2, 3.1, 10.01]
+
+# num = input('Введите число: ')
+# sep = num.split('.')
+# left_ = int(sep[0])
+# right_ = int(sep[1])
+# sum = 0
+for i in round(len(my_list)):
+    num = my_list[i].split('.')
+    num_left = int(num[0])
+    num_right = int(num[1])
