@@ -9,15 +9,17 @@
 
 
 
-
 my_list = [1.1, 1.2, 3.1, 10.01]
 
-# num = input('Введите число: ')
-# sep = num.split('.')
-# left_ = int(sep[0])
-# right_ = int(sep[1])
-# sum = 0
-for i in round(len(my_list)):
-    num = my_list[i].split('.')
-    num_left = int(num[0])
-    num_right = int(num[1])
+def min_max(my_list):
+    min = 1
+    max = 0
+    for i in my_list:
+        if (i - int(i)) <= min:
+            min = i - int(i)
+        if (i - int(i)) >= max:
+            max = i - int(i)  
+    return (max - min)
+    
+res = min_max(my_list)
+print('%.2f'% (res))
