@@ -1,0 +1,4 @@
+
+Your equation = ['5', '+', '8'] = 13
+Your equation = ['15', '/', '3'] = 5.0
+Your equation = 6 - 15 = -9
